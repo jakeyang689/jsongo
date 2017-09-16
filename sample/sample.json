@@ -1,0 +1,5 @@
+{
+	"a":{"v":"value from json file"},
+	"b":[1,2,3],
+	"c":true
+}
