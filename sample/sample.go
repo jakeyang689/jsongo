@@ -59,11 +59,12 @@ func main() {
 	}
 
 	//encode json
-	eobj := jsongo.NewJObject()
+	var eobj jsongo.JObject
+	eobj.New() //it must be called here to make a new map[string]interface{}
 	eobj["object"] = obj
 	eobj["number"] = 1
 	eobj["string"] = "a sample string"
-	arr := jsongo.NewJArray()
+	var arr jsongo.JArray
 	arr.Append(1)
 	arr.Append(2)
 	eobj["array"] = arr

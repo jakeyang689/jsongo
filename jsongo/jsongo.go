@@ -139,6 +139,9 @@ func NewJObject() JObject{
 	var pnd = make(JObject)
 	return pnd
 }
+func (obj *JObject) New (){
+  (*obj) = make(JObject)
+}
 
 //get a json value from json object
 func (pjnd *JObject) GetValue(key string) JValue{
